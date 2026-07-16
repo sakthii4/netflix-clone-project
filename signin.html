@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix -sign in</title>
+
+
+    <!-- google sans -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'google sans';
+        }
+
+
+
+        body {
+            background: url(./assets/hero-section-bg.png);
+            /* background-size:fit; */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+
+
+        .wrapper {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.425);
+        }
+
+        /* header starts */
+
+
+        header {
+            display: flex;
+            justify-content: center;
+            padding: 7px;
+            background-color: black;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        /* header ends */
+
+
+        /* main starts */
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90%;
+        }
+
+        .form {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.986);
+            width: 400px;
+            height: 420px;
+            padding: 20px 15px;
+            border-radius: 5px;
+        }
+
+        .form input[type='text'],
+        [type='password'] {
+            width: 100%;
+            background-color: rgba(128, 128, 128, 0.486);
+            border: none;
+            height: 45px;
+            margin: 10px 0;
+            padding: 0 4px;
+        }
+
+        .form button  a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .form h3 {
+            font-size: 1.6rem;
+            margin: 20px 0;
+        }
+
+        .form button {
+            background: red;
+            border: none;
+            width: 100%;
+            height: 45px;
+            color: white;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            transform: 0.3s all ease;
+
+        }
+
+
+        .form input[type='checkbox'] {
+            accent-color: red;
+        }
+
+        .check {
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        .check+p {
+            margin: 40px 5px;
+        }
+
+        /* main ends */
+
+
+        /* hover effects */
+
+        button:hover{
+            transform: scale(1.02);
+            background-color: rgba(255, 0, 0, 0.87);
+        }
+
+
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <img src="./assets/download.svg" type="svg" alt="netflix-logo">
+        </header>
+
+
+        <main>
+
+            <div class="form">
+
+                <div class="container">
+                    <h3>Sign In</h3>
+
+                    <input type="text" placeholder="Email or phone number">
+                    <input type="password" placeholder="password">
+
+                    <br>
+
+                    <button><a href="./browse.html">Sign In</a></button>
+
+                    <div class="check">
+                        <div>
+                            <input type="checkbox" id="remberme">
+                            <label for="remberme">Rember me</label>
+                        </div>
+
+                        <p>Need help?</p>
+                    </div>
+
+                    <p>New to Netflix? <a href="./signup.html">Sign up now</a></p>
+                </div>
+
+            </div>
+
+
+
+
+        </main>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

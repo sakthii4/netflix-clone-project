@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix -sign up</title>
+
+
+    <!-- google sans -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'google sans';
+        }
+
+
+
+        body {
+            background: url(./assets/hero-section-bg.png);
+            /* background-size:fit; */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+
+
+        .wrapper {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.425);
+        }
+
+        /* header starts */
+
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 8px;
+            background-color: black;
+            color: white;
+        }
+
+        header a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        /* header ends */
+
+
+        /* main starts */
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90%;
+        }
+
+        .form {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.986);
+            width: 400px;
+            height: 500px;
+            padding: 20px 15px;
+            border-radius: 5px;
+        }
+
+        .form input[type='text'],
+        [type='password'],
+        [type='email'] {
+            width: 100%;
+            background-color: rgba(128, 128, 128, 0.486);
+            border: none;
+            height: 45px;
+            margin: 10px 0;
+            padding: 0 4px;
+        }
+
+        .form select {
+            width: 100%;
+            background-color: rgba(128, 128, 128, 0.486);
+            border: none;
+            height: 45px;
+            margin: 7px 0;
+            padding: 0 4px;
+            color: white;
+        }
+
+        .form label{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: 8px;
+        }
+
+        .form option{
+            background-color: black;
+        }
+        .form h3 {
+            font-size: 1.6rem;
+            margin: 8px 0;
+        }
+
+        .form button {
+            background: red;
+            border: none;
+            width: 100%;
+            height: 45px;
+            color: white;
+            border-radius: 4px;
+            margin: 20px 0;
+
+        }
+        
+        button + p{
+            font-size: 0.8rem;
+        }
+
+       
+
+        /* main ends */
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <img src="./assets/download.svg" type="svg" alt="netflix-logo">
+
+            <a href="./signin.html">Sign In</a>
+        </header>
+
+
+        <main>
+
+            <div class="form">
+
+                <div class="container">
+                    <h3>Sign Up</h3>
+                    <p>Create your account to start watching.</p>
+
+                    <input type="text" placeholder="Full name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="password">
+
+                    <label for="plan">Plan</label>
+                    <select name="" id="plan">
+                        <option value="">Mobile</option>
+                        <option value="">Basic</option>
+                        <option value="">Standard</option>
+                        <option value="">prmium</option>
+                    </select>
+
+
+                    <br>
+
+                    <button>Sign In</button>
+    
+                      
+                    <p>By Continuing, you agree to Netflix's <a href="#">Terms of Use</a> and <a href="#"> Privacy Policy </a> </p>
+                  
+
+                   
+                </div>
+
+            </div>
+
+
+
+
+        </main>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

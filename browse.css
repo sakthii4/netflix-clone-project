@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Google Sans',sans-serif; 
+}
+
+
+
+/* header starts */
+
+
+header{
+    background-color: black;
+    padding: 10px;
+}
+
+.header-wrapper{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.header-wrapper div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 70%; 
+    /* border: 2px solid red; */
+}
+
+.header-wrapper div:last-child{
+    /* border: 2px solid white; */
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+
+.header-wrapper div:nth-child(2) input{
+   display: none;
+}
+
+.header-wrapper div:nth-child(2) button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.7rem;
+}
+
+nav{
+    display: flex;
+     /* gap: 15px; */
+    /* border: 2px solid white; */
+    justify-content: space-around;
+    width: 100%;
+    /* display: none; */
+    margin-left: 20px;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/* header ends */
+
+/* main starts */
+
+main{
+    background:black;
+    color: white;
+    padding: 10px;
+
+}
+
+.movie-wrapper{
+    display: flex;
+    overflow-x: scroll ;
+    overflow-y: hidden;
+    gap: 10px;
+    margin: 20px;
+    /* border: 2px solid white; */
+    padding: 15px;
+   
+    
+}
+
+
+
+
+.movie-wrapper::-webkit-scrollbar {
+    height: 8px;
+    width:10px;
+
+    
+}
+
+.movie-wrapper::-webkit-scrollbar-thumb {
+    margin-top: 10px;
+    background: #9b0000fa;
+    
+    
+}
+
+
+
+
+.movie{
+    width: 300px;
+    flex: 0 0 auto;
+    transition: 0.3s all ease;
+    border: 2px solid rgba(255, 255, 255, 0.137);
+   
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    
+
+}
+
+section p{
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.movie img{
+    width: 100%;
+    object-fit: fit;
+
+}
+
+.movie h3{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.6rem;
+    
+}
+
+.movie:hover {
+    transform: scale(1.02); 
+     /* border: 2px solid yellow;  */
+     border: 2px solid white;
+     /* color: blue; */
+  
+  
+}
+
+.movie:hover  img{
+     opacity: 70%;
+}
+
+
+
+
+
+
+
+
+/* main ends */
+
+
+
+/* footer start */
+
+
+footer{
+   
+    color: white;
+    background: black;
+    padding: 20px;
+}
+
+.footer-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    gap: 4px;
+
+}
+
+.footer-wrapper a{
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+
+}
+.footer-content p{
+    text-align: center;
+}
+
+.footer-content  :first-child{
+    font-size: 0.9rem;
+}
+
+.footer-content div{
+    margin: 20px 0;
+}
+
+.footer-content input{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    height: 50px;
+    width: 70%;
+    margin: 4px;
+}
+
+.footer-content button{
+    background: #E50914;
+    height: 50px;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    margin: 4px;
+
+}
+
+.container{
+      width: 80%;
+     margin:0 auto;
+}
+
+
+/* footer ends */
+
+
+/* when mobile screen the movie card will get 500px width */
+
+
+@media screen and (min-width:300px) {
+
+     nav{
+        display: none;
+     }
+
+    .movie{
+        width: 500px;
+    }
+
+     
+
+   
+    
+       .footer-wrapper{
+        margin: 20px 0;
+        grid-template-columns: repeat(2,1fr)
+    }
+
+    .footer-content div{
+        width: 100%;
+    }
+
+    .footer-content div input{
+        width: 100%;
+    }
+
+    .footer-content div button{
+       padding: 4px 8px;
+    }
+}
+
+/* upto mobile screen movie card take 400px  widht*/
+
+@media screen and (min-width:700px) {
+
+     nav{
+        display:inline-flex;
+     }
+
+    .movie{
+        width: 400px;
+    }
+        .footer-wrapper{
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+    .footer-content div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-content div input{
+        width: 55%;
+    }
+
+    .footer-content div button{
+        padding: 15px;
+    }
+   
+}
