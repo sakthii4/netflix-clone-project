@@ -174,10 +174,12 @@ nav a{
     display: flex;
     overflow-x: scroll ;
     overflow-y: hidden;
-    gap: 15px;
+    gap: 10px;
     margin: 20px;
     /* border: 2px solid white; */
     padding: 15px;
+   scroll-snap-type: x mandatory;
+
     
     
 }
@@ -203,7 +205,7 @@ nav a{
 
 
 .movie{
-    width: 300px;
+    
     flex: 0 0 auto;
     transition: 0.3s all ease;
     border: 2px solid rgba(255, 255, 255, 0.137);
@@ -339,8 +341,12 @@ footer {
     }
     .movie-wrapper{
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+
+    .movie{
+        width: 300px;
     }
 
         .footer-wrapper {
